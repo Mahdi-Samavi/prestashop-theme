@@ -1,0 +1,10 @@
+const firebaseConfig = {
+  apiKey: "AIzaSyCFCCBDu33srRBwj1Jm3LumSQXROvzrG20",
+  authDomain: "theme-editor-1566129173355.firebaseapp.com",
+  databaseURL: "https://theme-editor-1566129173355.firebaseio.com",
+  projectId: "theme-editor-1566129173355",
+  storageBucket: "theme-editor-1566129173355.appspot.com",
+  messagingSenderId: "861095381761",
+  appId: "1:861095381761:web:64c880a56c8614d01a6900",
+  measurementId: "G-H0EKPLWVBE"
+};firebase.initializeApp(firebaseConfig);const messaging=firebase.messaging();messaging.onTokenRefresh(function(){messaging.getToken().then(function(a){setTokenSentToServer(!1),sendTokenToServer(a),resetUI()}).catch(function(a){console.log("Unable to retrieve refreshed token ",a)})}),messaging.onMessage(function(a){appendMessage(a)});function resetUI(){messaging.getToken().then(function(a){a?sendTokenToServer(a):setTokenSentToServer(!1)}).catch(function(a){console.log("An error occurred while retrieving token. ",a),setTokenSentToServer(!1)})}function sendTokenToServer(a){isTokenSentToServer()||(jQuery.getJSON(prestashop.urls.base_url+"module/msnotification/ajax?action=send_token&token"+a),setTokenSentToServer(!0))}function isTokenSentToServer(){return"1"===window.localStorage.getItem("sentToServer")}function setTokenSentToServer(a){window.localStorage.setItem("sentToServer",a?"1":"0")}messaging.requestPermission().then(function(){resetUI()}).catch(function(a){console.log("Unable to get permission to notify.",a)});function appendMessage(a){const b=document.querySelector("#messages"),c=document.createElement("h5"),d=document.createElement("pre");d.style="overflow-x:hidden;",c.textContent="Received message:",d.textContent=JSON.stringify(a,null,2),b.appendChild(c),b.appendChild(d)}function clearMessages(){for(const a=document.querySelector("#messages");a.hasChildNodes();)a.removeChild(a.lastChild)}resetUI();

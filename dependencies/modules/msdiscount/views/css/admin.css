@@ -1,0 +1,35 @@
+#content a:hover, #content a:focus {
+	outline: none;
+	text-decoration: none;
+}
+#tabMenu {
+    border: 1px solid #d3d8db;
+    border-radius: 5px;
+    overflow: hidden;
+}
+#tabMenu a {
+    color: #555;
+	border-bottom: 1px solid #d3d8db;
+    margin-bottom: -1px;
+}
+#nav-bar > a {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+#tabMenu a:hover {
+	border-color: #d3d8db;
+}
+#tabMenu .active_tab {
+	background-color: #00aff0;
+}
+#tabMenu .active_tab a {
+	color: #fff;
+}
+#msdiscount_form .panel {
+	display: none;
+}
+#content.bootstrap .panel.selected {
+	display: block;
+	margin-bottom: 2px;
+}

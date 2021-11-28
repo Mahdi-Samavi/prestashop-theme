@@ -1,0 +1,40 @@
+@font-face {
+	font-family: 'Arapey';
+	src: url('../fonts/msswiper/Arapey/Arapey-Italic.ttf'),
+		 url('../fonts/msswiper/Arapey/Arapey-Regular.ttf');
+}
+@font-face {
+	font-family: 'Autour One';
+	src: url('../fonts/msswiper/Autour One/AutourOne-Regular.ttf');
+}
+@font-face {
+	font-family: 'Charmonman';
+	src: url('../fonts/msswiper/Charmonman/Charmonman-Bold.ttf'),
+		 url('../fonts/msswiper/Charmonman/Charmonman-Regular.ttf');
+}
+@font-face {
+	font-family: 'Chela One';
+	src: url('../fonts/msswiper/Chela One/ChelaOne-Regular.ttf');
+}
+@font-face {
+	font-family: 'Old Standard TT';
+	src: url('../fonts/msswiper/Old Standard TT/OldStandardTT-Bold.ttf'),
+		 url('../fonts/msswiper/Old Standard TT/OldStandardTT-Italic.ttf'),
+		 url('../fonts/msswiper/Old Standard TT/OldStandardTT-Regular.ttf');
+}
+@font-face {
+	font-family: 'Freckle Face';
+	src: url('../fonts/msthemeeditor/Freckle Face/FreckleFace-Regular.ttf');
+}
+@font-face {
+	font-family: 'Gamja Flower';
+	src: url('../fonts/msthemeeditor/Gamja Flower/GamjaFlower-Regular.ttf');
+}
+@font-face {
+	font-family: 'Habibi';
+	src: url('../fonts/msthemeeditor/Habibi/Habibi-Regular.ttf');
+}
+@font-face {
+	font-family: 'New Rocker';
+	src: url('../fonts/msthemeeditor/New Rocker/NewRocker-Regular.ttf');
+}

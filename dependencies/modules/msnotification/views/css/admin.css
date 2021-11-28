@@ -1,0 +1,24 @@
+#content a:hover, #content a:focus {
+	outline: none;
+	text-decoration: none;
+}
+#tabMenu a {
+	border-bottom: 1px solid transparent;
+}
+#tabMenu a:hover {
+	border-color: #d3d8db;
+}
+#tabMenu .active_tab {
+	background-color: #f4f6f8;
+}
+#tabMenu .active_tab a {
+	color: #0077a4;
+	text-shadow: 0 0 1px #0077a4;
+}
+#msnotification_form .panel {
+	display: none;
+}
+#content.bootstrap .panel.selected {
+	display: block;
+	margin-bottom: 2px;
+}
